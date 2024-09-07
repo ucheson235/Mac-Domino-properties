@@ -1,0 +1,394 @@
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+  }
+  
+  header {
+    background-color: #0066cc;
+    padding: 1rem;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+
+  .logo img {
+    width: 100%;
+  }
+  
+  .burger {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00;
+  }
+
+  .nav-btn button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(218, 185, 31);
+    color: white;
+
+
+  }
+
+  /* <!-- ---------------------------------------- -->
+       <!-- hero section  --> */
+
+       .hero-cover{
+        background-image: url(./asset/hero-img.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+       }
+
+       .hero-layer{
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        opacity: 0.8;
+
+       }
+
+       .hero-text{
+        position: absolute;
+        top: 50%;
+        left: 20%;
+       }
+
+       .hero-text h1{
+        font-size: 3rem;
+         color: rgb(218, 185, 31);
+         margin-bottom: 20px;
+       }
+       .hero-text h2{
+        font-size: 1.5rem;
+         color: white;
+         margin-bottom: 20px;
+       }
+
+       .hero-text button{
+        padding: 20px 30px;
+        font-size: 1.5rem;
+        background-color: rgb(218, 185, 31);
+        color: white;
+        border: none;
+        border-radius: 5px;
+       }
+
+       .hero-text button:hover{
+        background-color: rgb(95, 78, 4);
+
+       }
+
+       /* <!-- ------------------------------- -->
+       <!-- slider section  --> */
+
+       .slilder-main{
+        padding: 10rem;
+        text-align: center;
+       }
+
+       .slilder-main h1{
+        text-align: center;
+        font-size: 2rem;
+        margin: 50px;
+        color: rgb(218, 185, 31);
+       }
+
+       .slilder-main-btn{
+        padding: 20px 30px;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(218, 185, 31);
+        color: white;
+        margin: 50px;
+        
+       }
+
+       .slilder-main-btn:hover{
+        background-color: rgb(95, 78, 4);
+
+       }
+
+       .div-slider{
+        width: 100%;
+        position: relative;
+
+       }
+
+       .div-slider img{
+        width: 100%;
+       }
+
+       .slider-btn {
+        position: absolute;
+        top: 200%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        color: white;
+        border: none;
+        padding: 15px 20px;
+        font-size: 24px;
+        cursor: pointer;
+        border-radius: 5px;
+        z-index: 3; /* Above the overlay */
+        
+      }
+      
+      /* Position the Previous Button to the Left */
+      .slider-btn:nth-of-type(1) {
+        left: 200px;
+      }
+      
+      /* Position the Next Button to the Right */
+      .slider-btn:nth-of-type(2) {
+        right: 200px;
+      }
+      
+      /* Button Hover Effects */
+      .slider-btn:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      /* ------------------------------- */
+      /* card section  */
+      .card-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .card-div {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 5rem;
+    }
+    
+    .card {
+        background-color: rgb(218, 185, 31);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        width: 300px;
+        text-align: center;
+    }
+    
+    .card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .card-img img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .card-text {
+        padding: 20px;
+    }
+    
+    .card-text h2 {
+        margin: 0;
+        font-size: 24px;
+        color: white;
+    }
+    
+    .card-text p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: white;
+    }
+    
+
+    /* <!-- ---------------------------------------- -->
+
+    <!-- footer --> */
+
+    footer {
+        padding: 5rem;
+        background-color: #041b31;
+    }
+
+    .Get-in-touch-text{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-div h1{
+        text-align: center;
+        margin: 50px;
+        color: rgb(218, 185, 31);
+        font-size: 2rem;
+    }
+
+    .Get-in-touch-text h3{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    .Get-in-touch-text h4{
+        font-size: 1rem;
+        margin-bottom: 20px;
+        color:gray;
+    }
+
+    .Get-in-touch-text input{
+        padding: 10px;
+        font-size: 1rem;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+    }
+
+    .Get-in-touch-text button{
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(218, 185, 31);
+        color: white;
+    }
+
+    .Get-in-touch-text button:hover{
+        background-color: rgb(95, 78, 4);
+
+    }
+
+    footer p{
+        text-align: center;
+        margin: 50px;
+        color: gray;
+        font-size: 1rem;
+    }
+    
+ 
+
+
+
+  
+ 
+  /* Responsive navbar for smaller screens */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      background-color: #0066cc;
+      top: 100px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 1rem 0;
+    }
+  
+    .burger {
+      display: block;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .hero-text{
+        position: absolute;
+        top: 30%;
+        left: 10%;
+       }
+
+       .hero-text h1{
+        font-size: 1.5rem;
+       }
+       .hero-text h2{
+        font-size: 1rem;
+       }
+
+       .hero-text button{
+        padding: 10px 15px;
+        font-size: 1rem;
+    
+       }
+
+       .hero-cover{
+        height: 50vh;
+       }
+
+       .hero-layer{
+        height: 50vh;
+       }
+
+       .slilder-main{
+        padding: 1rem;
+       }
+       .slilder-main h1{
+         font-size: 1.5rem;
+       }
+
+       .slider-btn{
+        top: 105%;
+
+       }
+
+       .slider-btn:nth-of-type(1) {
+        left: 50px;
+      }
+      
+     
+      .slider-btn:nth-of-type(2) {
+        right: 50px;
+      }
+
+     
+
+}
