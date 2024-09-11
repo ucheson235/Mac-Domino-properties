@@ -345,12 +345,12 @@
 
     .hero-text{
         position: absolute;
-        top: 30%;
+        top: 35%;
         left: 10%;
        }
 
        .hero-text h1{
-        font-size: 1.5rem;
+        font-size: 1rem;
        }
        .hero-text h2{
         font-size: 1rem;
