@@ -30,6 +30,7 @@
 
   .logo img {
     width: 100%;
+    border-radius: 60%;
   }
   
   .burger {
@@ -91,7 +92,7 @@
 
        .hero-text{
         position: absolute;
-        top: 50%;
+        top: 70%;
         left: 20%;
        }
 
@@ -159,6 +160,7 @@
 
        .div-slider img{
         width: 100%;
+        border-radius: 20px;
        }
 
        .slider-btn {
