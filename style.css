@@ -30,7 +30,7 @@
 
   .logo img {
     width: 100%;
-    border-radius: 60%;
+    border-radius: 50%;
   }
   
   .burger {
@@ -390,6 +390,15 @@
       .slider-btn:nth-of-type(2) {
         right: 50px;
       }
+
+      .logo {
+        width: 70px;
+      }
+
+      .logo img {
+        width: 100%;
+      }
+    
 
      
 
